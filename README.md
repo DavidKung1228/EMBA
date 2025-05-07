@@ -7,7 +7,7 @@ model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2') # semantic 
 
 
 def load_keywords_from_files(file_paths):
-# Read multiple Excel files, extract keyword fields, and handle common delimiters
+Read multiple Excel files, extract keyword fields, and handle common delimiters
 for file in file_paths:
 df = pd.read_excel(file)
 for row in df.itertuples():
